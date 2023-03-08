@@ -1,0 +1,13 @@
+local myName = 'Norman' 
+
+_G.autoTap = true; 
+while _G.autoTap == true do
+
+	local args = {
+    [1] = "rep",
+    [2] = workspace.machinesFolder:FindFirstChild("Bench Press").interactSeat
+	}
+
+game:GetService("Players").LocalPlayer.muscleEvent:FireServer(unpack(args))
+wait(0.00000001)
+end
